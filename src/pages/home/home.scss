@@ -1,3 +1,65 @@
 page-home {
 
+	.scroll-content {
+		background-color: map-get($colors, light);
+	}
+
+	.spinner-container {
+		width: 100%;
+		padding: 20px;
+		text-align: center;
+	}
+
+	ion-toolbar .toolbar-background {
+		background-color: #fff !important;
+		border: none !important;
+	}
+
+    textarea {
+		width: calc(100% - 20px);
+		margin-left: 10px;
+        background-color: #fff;
+		font-size: 1.2em;
+		resize: none;
+		border: none;
+    }   
+
+	ion-item {
+		background-color: map-get($colors, light) !important;
+	}
+
+	.chat-bubble {
+	
+		width: 65%;
+		overflow: hidden;
+	
+	}
+
+	.chat-message {
+		padding: 10px;
+		border-radius: 5px;	
+		background-color: #fff;
+		white-space: normal;
+	}
+
+	.chat-author {
+		font-style: italic;
+		float: right;
+	}
+
+	ion-item:last-child .chat-bubble{
+		animation: slideIn 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+		animation-fill-mode: forwards;
+	}
+
+	.own {
+
+		float: right;
+
+		.chat-message {
+			background-color: map-get($colors, primary);
+			color: #fff;
+		}
+	}
+
 }
